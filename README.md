@@ -1,8 +1,14 @@
-# @my-io-game/testing
+# @7frank/langchain-instrumentation
 
 ## Huh?
 
 This helps to trace your code with a instance of [phoenix from arize](https://docs.arize.com/phoenix/tracing/how-to-tracing/manual-instrumentation/javascript).
+
+## Installation
+
+> No npm export, use hashes for now.
+
+`npm install github:7frank/langchain-instrumentation#a193e05`
 
 ## How To AutoInstrument OpenAi And Langchain
 
@@ -16,7 +22,7 @@ Create this file in your project root
 
 ```typescript
 // instrumentation.ts
-import { autoInstrument } from "@my-io-game/testing";
+import { autoInstrument } from "@7frank/langchain-instrumentation";
 autoInstrument();
 ```
 
@@ -32,7 +38,7 @@ In addition to the things above, you can also use the `log` function to trace th
 
 ```typescript
 // somewhere-in-your-codebase.ts
-import { log } from "@my-io-game/testing/span";
+import { log } from "@7frank/langchain-instrumentation/span";
 
 // you can use async functions
 async function add(a:number,b:number) {
