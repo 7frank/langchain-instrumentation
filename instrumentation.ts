@@ -1,0 +1,3 @@
+import { autoInstrument } from ".";
+
+autoInstrument();
